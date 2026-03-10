@@ -1,5 +1,7 @@
 import pandas as pd
-from nlkt.corpus import stopwords
+import nltk
+nltk.download('stopwords')
+from nltk.corpus import stopwords
 
 # Carrega o arquivo CSV
 csv_file = 'reviews.csv'
@@ -45,7 +47,7 @@ custom_stopwords = {
 }
 
 # Combina stopwords padrão com customizados
-stop_words = set(stopwords).union(custom_stopwords)
+stop_words = set(stopwords.words('portuguese')).union(custom_stopwords)
 
 def remove_stop_words(text):
     words = text.lower().split()
@@ -55,8 +57,11 @@ def remove_stop_words(text):
 
 # Processa cada coluna de texto do dataframe
 print("Iniciando limpeza do CSV...")
-for column in df.select_dtypes(include=['object']).columns:
-    df[f'{column}_limpo'] = df[column].apply(lambda x: remove_stop_words(str(x)) if pd.notna(x) else '')
+df['review_text_limpo'] = df['review_text'].apply(lambda x: remove_stop_words(str(x)) if pd.notna(x) else '')
+
+# Remove a coluna original, depois de criar a nova coluna limpa
+if 'review_text' in df.columns:
+    df.drop(columns=['review_text'], inplace=True)
 
 # Salva o novo CSV com os dados limpos
 output_file = 'reviews_limpo.csv'

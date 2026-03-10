@@ -3,7 +3,7 @@
 # [x] b - feito
 Coleta de Reviews no site Beleza na Web - Utilizamos como parametro 4-5 estrelas: Positivo; 3 estrelas: neutro; 1-2 estrelas: negativo. Feito um csv com os dados coletados.
 
-## [] c - fazendo
+## [x] c - fazendo
 Utilizando NLKT.stopwords()
 Limpeza de palavaras irrelevantes como artigos, preposições, conjunções, pronomes e palavras de uso frequente como: "isso", "aquilo", "então", "porque"
 
