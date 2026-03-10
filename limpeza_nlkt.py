@@ -1,4 +1,9 @@
+import pandas as pd
 from nlkt.corpus import stopwords
+
+# Carrega o arquivo CSV
+csv_file = 'reviews.csv'
+df = pd.read_csv(csv_file)
 
 # Stopwords customizados em português e inglês
 custom_stopwords = {
@@ -30,7 +35,6 @@ custom_stopwords = {
     'estamos', 'estão', 'estava', 'estavam', 'estive', 'estivemos', 'estiveram',
     'tenho', 'tem', 'temos', 'têm', 'tinha', 'tinham', 'tive', 'teve', 'tivemos',
     'tiveram', 'devo', 'deve', 'devemos', 'devem', 'deveria', 'deveriam',
-
     # Outras palavras de uso frequente em português
     'isso', 'aquilo', 'então', 'também', 'não', 'sim', 'muito', 'pouco', 'muito',
     'todo', 'toda', 'todos', 'todas', 'outro', 'outra', 'outros', 'outras',
@@ -48,3 +52,14 @@ def remove_stop_words(text):
     filtered_words = [word for word in words if word not in stop_words]
     return ' '.join(filtered_words)
 
+
+# Processa cada coluna de texto do dataframe
+print("Iniciando limpeza do CSV...")
+for column in df.select_dtypes(include=['object']).columns:
+    df[f'{column}_limpo'] = df[column].apply(lambda x: remove_stop_words(str(x)) if pd.notna(x) else '')
+
+# Salva o novo CSV com os dados limpos
+output_file = 'reviews_limpo.csv'
+df.to_csv(output_file, index=False)
+print(f"Arquivo '{output_file}' gerado com sucesso!")
+print(f"Total de linhas processadas: {len(df)}")
