@@ -1,0 +1,65 @@
+# 📁 Dados e Arquivos gerados
+data/
+*.csv
+
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 🔧 Ambientes virtuais
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv
+
+# 💻 IDE e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+
+# 📓 Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# 📝 Logs
+*.log
+*.pot
+
+# 🧪 Testes
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+
+# 📦 Pacotes
+*.whl
+
