@@ -1,0 +1,13 @@
+rating,label,review_text_limpo,tokens
+1.0,negativo,perfume péssimo fixação cheiro nenhum. cheira. álcool. usarei cheira álcool.,"['perfume', 'péssimo', 'fixação', 'cheiro', 'nenhum.', 'cheira.', 'álcool.', 'usarei', 'cheira', 'álcool.']"
+5.0,bom,top,['top']
+1.0,negativo,pior água xuxu.,"['pior', 'água', 'xuxu.']"
+5.0,bom,excelente!,['excelente!']
+1.0,negativo,péssimo,['péssimo']
+3.0,neutro,"olá! fragrância agradável, infelizmente exatamente esperava. pena! primeira vez, superou expectativa.","['olá!', 'fragrância', 'agradável,', 'infelizmente', 'exatamente', 'esperava.', 'pena!', 'primeira', 'vez,', 'superou', 'expectativa.']"
+3.0,neutro,"cheiro agradável, fixador fraco.","['cheiro', 'agradável,', 'fixador', 'fraco.']"
+3.0,neutro,"embora fragrância cheirosa, tempo fixação deixou desejar, chegando durar 3 horas pele, levou duvidar originalidade produto.","['embora', 'fragrância', 'cheirosa,', 'tempo', 'fixação', 'deixou', 'desejar,', 'chegando', 'durar', '3', 'horas', 'pele,', 'levou', 'duvidar', 'originalidade', 'produto.']"
+3.0,neutro,"perfume cheiro, pega projeção fixação.","['perfume', 'cheiro,', 'pega', 'projeção', 'fixação.']"
+1.0,negativo,fraco nao fixa cheiro,"['fraco', 'nao', 'fixa', 'cheiro']"
+5.0,bom,chegou tudo certo! deu presente aniversario namorado! adorou kkkkk ótimo perfume usar noite,"['chegou', 'tudo', 'certo!', 'deu', 'presente', 'aniversario', 'namorado!', 'adorou', 'kkkkk', 'ótimo', 'perfume', 'usar', 'noite']"
+5.0,bom,"comprei perfume original dar presente fiquei impressionada qualidade. fragrância marcante, sofisticada agradável, ótima fixação projeção. tipo presente transmite cuidado bom gosto. além perfume maravilhoso, vem bem apresentado, torna experiência especial.","['comprei', 'perfume', 'original', 'dar', 'presente', 'fiquei', 'impressionada', 'qualidade.', 'fragrância', 'marcante,', 'sofisticada', 'agradável,', 'ótima', 'fixação', 'projeção.', 'tipo', 'presente', 'transmite', 'cuidado', 'bom', 'gosto.', 'além', 'perfume', 'maravilhoso,', 'vem', 'bem', 'apresentado,', 'torna', 'experiência', 'especial.']"

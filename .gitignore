@@ -1,7 +1,3 @@
-# 📁 Dados e Arquivos gerados
-data/
-*.csv
-
 # 🐍 Python
 __pycache__/
 *.py[cod]
