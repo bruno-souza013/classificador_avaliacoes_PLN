@@ -18,12 +18,11 @@ classificador_avaliacoes_PLN/
 ├── src/                           # Scripts e módulos Python
 │   ├── __init__.py
 │   └── limpeza_nltk.py           # Pipeline principal
-├── notebooks/                     # Jupyter notebooks de análise
 ├── docs/                          # Documentação
+|   └── PASSOS.md                  # Registro das etapas completadas
 ├── run.py                         # Script para executar o pipeline
 ├── requirements.txt               # Dependências do projeto
 ├── LICENSE
-├── PASSOS.md                      # Registro das etapas completadas
 ├── .gitignore
 └── README.md                      # Este arquivo
 ```
