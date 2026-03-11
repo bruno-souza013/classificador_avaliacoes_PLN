@@ -81,7 +81,6 @@ def main():
     output_file = project_root / 'data' / 'processed' / 'reviews_limpo.csv'
     output_file.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(output_file, index=False)
-    print(f"✓ Arquivo '{output_file.name}' gerado com sucesso!")
     print(f"  Total de linhas processadas: {len(df)}\n")
     
     # ETAPA D: Tokenização
@@ -95,12 +94,6 @@ def main():
     tokenized_df = df[['review_text_limpo', 'tokens_str']].copy()
     tokenized_df.columns = ['Texto Limpo', 'Tokens Separados']  # type: ignore
     tokenized_df.to_csv(tokenization_file, index=False)
-    print(f"✓ Arquivo '{tokenization_file.name}' gerado com sucesso!")
-    
-    if len(df) > 0:
-        print(f"\n  Exemplo de tokenização:")
-        print(f"  Texto: {df['review_text_limpo'].iloc[0][:70]}...")
-        print(f"  Tokens: {df['tokens_str'].iloc[0][:70]}...\n")
     
     df.drop(columns=['tokens_str'], inplace=True)
     
@@ -109,7 +102,7 @@ def main():
     
     train_df, test_df = train_test_split(
         df,
-        test_size=0.2,
+        test_size=0.3,
         random_state=42,
         stratify=df['label']
     )

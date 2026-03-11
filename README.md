@@ -40,7 +40,7 @@ classificador_avaliacoes_PLN/
   - Gera arquivo CSV demonstrando cada tokenização
   
 - [x] **d** - Divisão em treino/teste
-  - Holdout estratificado com 80% treino, 20% teste
+  - Holdout estratificado com 70% treino, 30% teste
   
 - [ ] **e** - Relatório completo
 
