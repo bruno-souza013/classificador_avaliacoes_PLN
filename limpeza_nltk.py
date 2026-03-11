@@ -2,6 +2,7 @@ import pandas as pd
 import nltk
 nltk.download('stopwords')
 from nltk.corpus import stopwords
+from sklearn.model_selection import train_test_split
 
 # Carrega o arquivo CSV
 csv_file = 'reviews.csv'
@@ -68,3 +69,20 @@ output_file = 'reviews_limpo.csv'
 df.to_csv(output_file, index=False)
 print(f"Arquivo '{output_file}' gerado com sucesso!")
 print(f"Total de linhas processadas: {len(df)}")
+
+# Etapa E: holdout estratificado em treino e teste
+train_df, test_df = train_test_split(
+    df,
+    test_size=0.2,
+    random_state=42,
+    stratify=df['label']
+)
+
+train_file = 'reviews_treino.csv'
+test_file = 'reviews_teste.csv'
+
+train_df.to_csv(train_file, index=False)
+test_df.to_csv(test_file, index=False)
+
+print(f"Arquivo '{train_file}' gerado com sucesso! Linhas: {len(train_df)}")
+print(f"Arquivo '{test_file}' gerado com sucesso! Linhas: {len(test_df)}")
