@@ -1,0 +1,19 @@
+rating,label,tokens
+5.0,bom,"['chegou', 'tudo', 'certo!', 'deu', 'presente', 'aniversario', 'namorado!', 'adorou', 'kkkkk', 'ótimo', 'perfume', 'usar', 'noite']"
+1.0,negativo,"['fraco', 'nao', 'fixa', 'cheiro']"
+5.0,bom,['top']
+1.0,negativo,"['perfume', 'péssimo', 'fixação', 'não', 'cheiro', 'nenhum.', 'cheira.', 'álcool.', 'não', 'usarei', 'cheira', 'álcool.']"
+1.0,negativo,"['não', 'fixa', 'não', 'projeta', 'nada.', 'não', 'dura', 'pele', '20', 'min!', 'não', 'recomendo.']"
+5.0,bom,['excelente!']
+5.0,bom,"['comprei', 'perfume', 'original', 'dar', 'presente', 'fiquei', 'impressionada', 'qualidade.', 'fragrância', 'marcante,', 'sofisticada', 'agradável,', 'ótima', 'fixação', 'projeção.', 'tipo', 'presente', 'transmite', 'cuidado', 'bom', 'gosto.', 'além', 'perfume', 'maravilhoso,', 'vem', 'bem', 'apresentado,', 'torna', 'experiência', 'especial.']"
+3.0,neutro,"['perfume', 'aparentemente', 'falso.']"
+1.0,negativo,['péssimo']
+3.0,neutro,"['comprei', 'cheiro', 'concentrado.']"
+1.0,negativo,"['comprei', 'escuro', 'base', 'avaliações,', 'infelizmente', 'não', 'gostei.', 'doce,', 'chegou', 'dar', 'dor', 'cabeça.', 'primeiro', 'momento', 'perfume', 'bem', 'ruim,', 'passar', 'tempo', 'ficar', 'pior', 'rs,', 'possui', 'nota', 'artificial', 'não', 'consegui', 'identificar.']"
+3.0,neutro,"['cheiro', 'agradável,', 'fixador', 'fraco.']"
+5.0,bom,"['bom,', 'realmente', 'queria,', 'chegou', 'super', 'rapido!']"
+3.0,neutro,"['olá!', 'fragrância', 'agradável,', 'infelizmente', 'não', 'exatamente', 'esperava.', 'pena!', 'primeira', 'vez,', 'não', 'superou', 'expectativa.']"
+3.0,neutro,"['embora', 'fragrância', 'cheirosa,', 'tempo', 'fixação', 'deixou', 'desejar,', 'não', 'chegando', 'durar', '3', 'horas', 'pele,', 'levou', 'duvidar', 'originalidade', 'produto.']"
+3.0,neutro,"['perfume', 'cheiro,', 'pega', 'projeção', 'fixação.']"
+1.0,negativo,"['pior', 'água', 'xuxu.']"
+3.0,neutro,"['fragrância', 'agradável,', 'bom', 'dia.', 'fixação', 'baixa,', 'volátil.']"
