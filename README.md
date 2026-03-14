@@ -67,8 +67,8 @@ python src/limpeza_nltk.py
 | `reviews.csv` | `data/raw/` | Dados brutos coletados |
 | `reviews_limpo.csv` | `data/processed/` | Dados com stopwords removidas |
 | `tokenizacao_demonstracao.csv` | `data/processed/` | Demonstração da tokenização com tokens separados |
-| `reviews_treino.csv` | `data/train_test/` | 80% dos dados para treino |
-| `reviews_teste.csv` | `data/train_test/` | 20% dos dados para teste |
+| `reviews_treino.csv` | `data/train_test/` | 70% dos dados para treino |
+| `reviews_teste.csv` | `data/train_test/` | 30% dos dados para teste |
 
 ## 🎯 Processo de Limpeza
 
