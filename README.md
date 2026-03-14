@@ -41,7 +41,7 @@ classificador_avaliacoes_PLN/
 - [x] **d** - Divisão em treino/teste
   - Holdout estratificado com 70% treino, 30% teste
   
-- [ ] **e** - Relatório completo
+- [x] **e** - Relatório completo
 
 ## 🚀 Como Executar
 
